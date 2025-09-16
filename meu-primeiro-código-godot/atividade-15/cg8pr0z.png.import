@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yx8cw2eu0cds"
-path="res://.godot/imported/cg8pr0z.png-68467ec5c93c0015f32a10b6ae918514.ctex"
+path="res://.godot/imported/cg8pr0z.png-04bb3279b58b939681470d91fcfc32d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cg8pr0z.png"
-dest_files=["res://.godot/imported/cg8pr0z.png-68467ec5c93c0015f32a10b6ae918514.ctex"]
+source_file="res://atividade-15/cg8pr0z.png"
+dest_files=["res://.godot/imported/cg8pr0z.png-04bb3279b58b939681470d91fcfc32d5.ctex"]
 
 [params]
 
