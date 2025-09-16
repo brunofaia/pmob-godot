@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cygmheu2xo0oh"]
+
+[ext_resource type="Texture2D" uid="uid://yx8cw2eu0cds" path="res://cg8pr0z.png" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://jyw2por4kcov" path="res://button.gd" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("1_0e48y")
+script = ExtResource("1_wtcfe")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
