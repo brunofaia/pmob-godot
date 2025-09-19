@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk6ld70hwb5v4"]
+
+[ext_resource type="Script" uid="uid://dlrwdn5kb0l13" path="res://atividade-18/progress_bar.gd" id="1_0xgol"]
+[ext_resource type="Texture2D" uid="uid://drob51amckyos" path="res://atividade-18/circle-solid-full (1).svg" id="2_g7r52"]
+[ext_resource type="Texture2D" uid="uid://csqfugr2j4y3s" path="res://atividade-18/circle-regular-full (1).svg" id="3_qebwk"]
+
+[node name="ProgressBar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xgol")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 43.0
+offset_right = 806.0
+offset_bottom = 683.0
+step = 0.1
+value = 1.0
+fill_mode = 4
+texture_under = ExtResource("2_g7r52")
+texture_progress = ExtResource("3_qebwk")
+
+[node name="Label" type="Label" parent="TextureProgressBar"]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 245.0
+offset_right = 475.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "1"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="value_changed" from="TextureProgressBar" to="." method="_on_texture_progress_bar_value_changed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
